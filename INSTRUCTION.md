@@ -25,7 +25,7 @@
     
     - Checking for the presence of env 'SECRET_KEY' in the secret.yml:
 
-        kubectl get configmap config-map -o jsonpath='{.data.*}' -n todoapp
+        kubectl get secret config-secret -o jsonpath='{.data.*}' -n todoapp
 
     - Checking for the presence of env 'SECRET_KEY' in the Pod:
 
